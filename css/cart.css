@@ -1,0 +1,79 @@
+/********** RESET **********/
+* {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.kasseh1 {
+  text-align: center;
+  color: var(--text-color);
+  margin-top: 2rem;
+}
+
+#form-section {
+  padding: 40px 20px;
+  max-width: 600px;
+  margin: auto;
+}
+
+#webform {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+}
+
+.formboks {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #9c8d81;
+  background-color: #e4d6cb;
+}
+
+.box-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.betaling {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid #9c8d81;
+  background-color: #e4d6cb;
+  padding: 15px;
+}
+
+.knap {
+  margin-top: 15px;
+  padding: 14px;
+  border-radius: 8px;
+  border: none;
+  background-color: var(--footer-color);
+  font-size: 1.2rem;
+  color: white;
+  cursor: pointer;
+}
+
+.knap:hover {
+  background-color: black;
+}
+
+.output {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #9c8d81;
+}
