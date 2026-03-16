@@ -73,13 +73,95 @@
         <div class="sectionDevider"></div>
 
 
-        <h1>Vores Kollektion</h1>
-        <h2>Kategorier</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita quisquam dolorum atque dolor magni nulla
-            quod
-            tenetur? Accusamus accusantium reprehenderit recusandae voluptatem, qui sequi voluptate nemo veritatis
-            obcaecati
-            totam neque!</p>
+        <h1 class="kasseh1">Kassen</h1>
+
+        <section id="form-section">
+            <form id="webform">
+
+
+                <label for="email"></label>
+                <input class="formboks" type="text" name="e_mail" placeholder="Din email" aria-describedby="fname-error"
+                    required>
+
+
+
+
+                <div class="checkbox">
+                    <input type="checkbox" checked />
+                    <label>Send mig en mail om nyheder og tilbud</label>
+                </div>
+
+                <select class="formboks" name="område" required>
+                    <option>Område</option>
+                    <option>Hovedstadsområdet</option>
+                    <option>Nordsjælland</option>
+
+                </select>
+
+                <div class="box-row">
+                    <input class="formboks" type="text" name="first_name" placeholder="Fornavn"
+                        aria-describedby="fname-error" required>
+                    <p class="error-message" id="fname-error"></p>
+
+                    <input class="formboks" type="text" name="last_name" placeholder="Efternavn"
+                        aria-describedby="fname-error" required>
+                    <p class="error-message" id="fname-error"></p>
+
+                </div>
+
+                <input class="formboks" type="text" name="adresse" placeholder="Adresse" aria-describedby="fname-error"
+                    required>
+
+
+                <div class="box-row">
+                    <input class="formboks" type="text" name="postnummer" placeholder="Postnummer"
+                        aria-describedby="fname-error" required>
+                    <p class="error-message" id="fname-error"></p>
+
+                    <input class="formboks" type="text" name="by" placeholder="By" aria-describedby="fname-error"
+                        required>
+                    <p class="error-message" id="fname-error"></p>
+
+                </div>
+
+                <h3>Betaling:</h3>
+
+                <label class="betaling">
+                    <input type="radio" name="betaling" value="MobilePay" required>
+                    MobilePay
+                </label>
+
+                <label class="betaling">
+                    <input type="radio" name="betaling" value="Kort">
+                    Credit card / debit card
+                </label>
+
+                <button class="knap" type="submit">Betal</button>
+
+
+
+            </form>
+
+            <div class="output">
+                <p>Mail: <span id="mail_output"></span></p>
+                <p>Fornavn: <span id="fornavn_output"></span></p>
+                <p>Efternavn: <span id="efternavn_output"></span></p>
+                <p>Adresse: <span id="adresse_output"></span></p>
+                <p>Postnummer: <span id="postnummer_output"></span></p>
+                <p>By: <span id="by_output"></span></p>
+                <p>Betaling: <span id="betaling_output"></span></p>
+            </div>
+
+
+
+
+        </section>
+
+
+
+
+
+
     </main>
 
     <footer>
@@ -118,6 +200,8 @@
             <img class="footer_logo" src="logo/Logo_white.webp" alt="Worthy Living Logo">
         </div>
     </footer>
+
+
 </body>
 
 </html>
