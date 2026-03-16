@@ -1,4 +1,30 @@
-const form = document.querySelector("#checkoutForm");
+const productURL = "https://dummyjson.com/products/40";
+const container = document.querySelector("#produktbillede");
+
+function getData() {
+  fetch(productURL)
+    .then((res) => res.json())
+    .then((data) => show(data));
+}
+
+function show(data) {
+  container.innerHTML = `
+    <div class="produktkort">
+      <img src="${data.images[0]}" alt="${data.title}">
+      
+     
+        <h2 class="produktnavn">${data.title}</h2>
+        <p class="produktpris">${data.price}$</p>
+      
+
+    </div>
+  `;
+}
+
+getData();
+
+const checkoutForm = document.querySelector("#webform");
+console.log("virker du?");
 
 const mailOutput = document.querySelector("#mail_output");
 const fornavnOutput = document.querySelector("#fornavn_output");
@@ -10,13 +36,12 @@ const betalingOutput = document.querySelector("#betaling_output");
 
 function cancelPopup(event) {
   event.preventDefault();
-  form.querySelector(":user-invalid").focus();
+  checkoutForm.querySelector(":user-invalid").focus();
 }
 
 function handleSubmit(event) {
   event.preventDefault();
-
-  const formData = new FormData(form);
+  const formData = new FormData(checkoutForm);
 
   const mail = formData.get("mail");
   const fornavn = formData.get("fornavn");
@@ -34,8 +59,8 @@ function handleSubmit(event) {
   byOutput.textContent = by;
   betalingOutput.textContent = betaling;
 
-  form.reset();
+  checkoutForm.reset();
 }
 
-form.addEventListener("invalid", cancelPopup, true);
-form.addEventListener("submit", handleSubmit);
+checkoutForm.addEventListener("invalid", cancelPopup, true);
+checkoutForm.addEventListener("submit", handleSubmit);

@@ -70,73 +70,78 @@
     </header>
 
     <main>
-        <div class="sectionDevider"></div>
+
 
 
         <h1 class="kasseh1">Kassen</h1>
+
+
+        <div id="produktbillede"></div>
+
 
         <section id="form-section">
             <form id="webform">
 
 
-                <label for="email"></label>
-                <input class="formboks" type="text" name="e_mail" placeholder="Din email" aria-describedby="fname-error"
-                    required>
+
+                <input class="formboks" type="text" name="mail" placeholder="Din email" required>
 
 
 
 
                 <div class="checkbox">
-                    <input type="checkbox" checked />
+                    <input type="checkbox" checked>
                     <label>Send mig en mail om nyheder og tilbud</label>
                 </div>
 
                 <select class="formboks" name="område" required>
-                    <option>Område</option>
+                    <option value="">Område</option>
                     <option>Hovedstadsområdet</option>
                     <option>Nordsjælland</option>
 
                 </select>
 
                 <div class="box-row">
-                    <input class="formboks" type="text" name="first_name" placeholder="Fornavn"
-                        aria-describedby="fname-error" required>
-                    <p class="error-message" id="fname-error"></p>
+                    <input class="formboks" type="text" name="fornavn" placeholder="Fornavn" required>
 
-                    <input class="formboks" type="text" name="last_name" placeholder="Efternavn"
-                        aria-describedby="fname-error" required>
-                    <p class="error-message" id="fname-error"></p>
+
+                    <input class="formboks" type="text" name="efternavn" placeholder="Efternavn" required>
+
 
                 </div>
 
-                <input class="formboks" type="text" name="adresse" placeholder="Adresse" aria-describedby="fname-error"
-                    required>
+                <input class="formboks" type="text" name="adresse" placeholder="Adresse" required>
 
 
                 <div class="box-row">
-                    <input class="formboks" type="text" name="postnummer" placeholder="Postnummer"
-                        aria-describedby="fname-error" required>
-                    <p class="error-message" id="fname-error"></p>
+                    <input class="formboks" type="text" name="postnummer" placeholder="Postnummer" required>
 
-                    <input class="formboks" type="text" name="by" placeholder="By" aria-describedby="fname-error"
-                        required>
-                    <p class="error-message" id="fname-error"></p>
+
+                    <input class="formboks" type="text" name="by" placeholder="By" required>
+
 
                 </div>
 
-                <h3>Betaling:</h3>
+                <h4>Betaling:</h4>
 
                 <label class="betaling">
                     <input type="radio" name="betaling" value="MobilePay" required>
                     MobilePay
+                    <img class="mobilepay" src="/mobilepay.webp" alt="mobilepay">
                 </label>
 
                 <label class="betaling">
                     <input type="radio" name="betaling" value="Kort">
+
                     Credit card / debit card
+                    <div class="betalingsikoner">
+                        <img class="visa" src="/visa.webp" alt="visa">
+                        <img class="mastercard" src="/mastercard.svg.webp" alt="mastercard">
+                    </div>
+
                 </label>
 
-                <button class="knap" type="submit">Betal</button>
+                <button class="submit" type="submit">Betal nu</button>
 
 
 
