@@ -10,13 +10,15 @@ function getData() {
 function show(data) {
   container.innerHTML = `
     <div class="produktkort">
+    <div class="produktindhold">   
+
       <img src="${data.images[0]}" alt="${data.title}">
       
-     
+     <div class="tekst"> 
         <h2 class="produktnavn">${data.title}</h2>
         <p class="produktpris">${data.price}$</p>
-      
-
+      </div>
+</div>
     </div>
   `;
 }

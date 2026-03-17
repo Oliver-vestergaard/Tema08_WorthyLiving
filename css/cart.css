@@ -17,15 +17,29 @@ img {
 }
 
 #produktbillede {
-  max-width: 280px;
-  margin: 0 auto 20px auto;
+  max-width: 550px;
+  margin: 0 auto;
 }
 
 .produktkort {
+  margin-top: 2rem;
+  background-color: #f5e7dc;
+}
+
+.produktindhold {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
+}
+
+.produktindhold img {
+  width: 200px;
+}
+
+.tekst {
+  display: flex;
+  align-items: center;
 }
 
 .produktnavn {
@@ -35,6 +49,7 @@ img {
 
 .produktpris {
   font-size: 0.9rem;
+  font-weight: 700;
 }
 
 #form-section {
