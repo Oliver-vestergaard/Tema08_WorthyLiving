@@ -1,0 +1,171 @@
+/********* BILLEDER **********/
+.mainProduct_img {
+  width: 400px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.secondaryProduct_img_Container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.secondaryProduct_img {
+  width: 120px;
+  height: auto;
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+/*********** TEKST ********/
+.price {
+  text-align: center;
+}
+
+.available {
+  text-align: center;
+  color: green;
+}
+
+/********** BUTTON **********/
+.Cta {
+  display: block;
+  min-width: 15rem;
+  border-radius: 10px;
+  height: 3rem;
+  font-size: 1.3rem;
+  border: none;
+  background-color: black;
+  color: white;
+  margin: 0 auto;
+}
+
+.Cta:hover {
+  color: var(--text-color);
+  background-color: var(--background-color);
+  border: 2px solid black;
+  transition: 0.2s;
+}
+
+/******** ACCORDION *********/
+
+.Accordion_container {
+  margin: 2rem auto;
+  overflow: hidden;
+  max-width: 25rem;
+}
+
+details {
+  border-top: 1px solid var(--footer-color);
+}
+
+summary {
+  cursor: pointer;
+  padding: 0 2rem 0 2rem;
+  font-size: 1.5rem;
+}
+
+.Accordion p {
+  padding-left: 2rem;
+}
+
+.Accordion dt {
+  font-weight: bolder;
+}
+dt,
+dd {
+  display: inline;
+}
+
+.Accordion_list {
+  padding-left: 2rem;
+  margin: 1rem;
+  margin-bottom: 1rem;
+}
+
+summary:hover {
+  background-color: #a0a78f;
+}
+
+.reviewCard {
+  border: 2px solid var(--footer-color);
+
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.Dimensions {
+  text-decoration: underline;
+  font-size: 1.1rem;
+}
+
+.indholds_Detaljer {
+  margin: 1rem 0 1rem 0;
+}
+
+/********* HEADING *********/
+.heading-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.heading-wrapper p {
+  text-align: center;
+}
+
+.heading-wrapper h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/********** DESKTOP **********/
+@media (min-width: 801px) {
+  /******* GRID *********/
+
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2rem;
+  }
+  .heading-wrapper {
+    grid-column: 2/3;
+  }
+
+  .primary_img_container {
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
+
+  .Product_information {
+    grid-row: 2/3;
+    grid-column: 2/3;
+  }
+
+  /************* Aligns *************/
+
+  .Product_information p {
+    text-align: left;
+  }
+
+  .Cta {
+    margin: 0;
+  }
+
+  .heading-wrapper p,
+  .heading-wrapper h1 {
+    text-align: left;
+  }
+
+  .heading-wrapper p {
+    margin-top: 0;
+  }
+
+  .Accordion_container {
+    margin: 2rem 0;
+  }
+}

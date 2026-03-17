@@ -24,7 +24,9 @@
     <!--Js-->
     <script src="js/burger.js" defer></script>
     <script src="js/footer.js" defer></script>
+
     <script src="js/productDetails.js" defer></script>
+
 
 
 </head>
@@ -72,13 +74,113 @@
         <div class="sectionDevider"></div>
 
 
-        <h1>Vores Kollektion</h1>
-        <h2>Kategorier</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita quisquam dolorum atque dolor magni nulla
-            quod
-            tenetur? Accusamus accusantium reprehenderit recusandae voluptatem, qui sequi voluptate nemo veritatis
-            obcaecati
-            totam neque!</p>
+
+        <div id="productContainer" class="grid_1-1">
+
+            <div class="heading-wrapper">
+                <p class="eyebrow">WORTHY LIVING</p>
+                <h1>Produktnavn</h1>
+            </div>
+
+
+            <div class="primary_img_container">
+                <img id="primary_img_change" class="mainProduct_img" src="logo/Billede af en tiger.jpeg" alt="">
+
+
+                <img id="primary_img_change1" class="mainProduct_img hide" src="logo/Favicon2.webp"
+                    alt="billede af produkt">
+                <img id="primary_img_change2" class="mainProduct_img hide" src="logo/logoNew.webp"
+                    alt="billede af produkt">
+
+
+
+
+
+
+
+                <div class="secondaryProduct_img_Container">
+                    <img id="product_img_1" class="secondaryProduct_img" src="logo/Favicon2.webp" alt="">
+                    <img id="product_img_2" class="secondaryProduct_img" src="logo/logoNew.webp" alt="">
+                    <img id="product_img_3" class="secondaryProduct_img" src="logo/Billede af en tiger.jpeg" alt="">
+                </div>
+            </div>
+
+            <div class="Product_information">
+
+                <p class="price">Pris</p>
+                <p class="available">På lager</p>
+
+                <button class="Cta">Læg i Kurv</button>
+
+
+                <article class="Accordion_container">
+                    <details class="Accordion">
+                        <summary>Beskrivelse</summary>
+
+
+                        <p>The Annibale Colombo Bed is a luxurious and elegant bed frame, crafted with high-quality
+                            materials for a comfortable and
+                            stylish bedroom.</p>
+                    </details>
+
+
+
+                    <details class="Accordion">
+                        <summary>Detaljer</summary>
+                        <div class="indholds_Detaljer">
+
+                            <dl class="Accordion_list">
+                                <dt>Brand:</dt>
+                                <dd>Annibale Colombo</dd> <br>
+                                <dt>Weight:</dt>
+                                <dd>10</dd> <br> <br>
+                                <dl>
+                                    <dt class="Dimensions">DIMENSIONS</dt> <br>
+                                    <dt>Width:</dt>
+                                    <dd>28.16</dd><br>
+                                    <dt>Heigh:</dt>
+                                    <dd>25.36</dd><br>
+                                    <dt>Depth:</dt>
+                                    <dd>17.28</dd><br>
+                                </dl>
+                            </dl>
+
+
+
+
+                        </div>
+
+
+
+
+
+
+                    </details>
+
+                    <details class="Accordion">
+                        <summary>Kundeanmeldelser</summary>
+                        <div class="reviewCard">
+                            <p class="card_Information">Christopher West <br> Would not recommend! <br> 2/5</p>
+                        </div>
+
+                        <div class="reviewCard">
+                            <p class="card_Information">Christopher West <br> Would not recommend! <br> 2/5</p>
+                        </div>
+
+                        <div class="reviewCard">
+                            <p class="card_Information">Christopher West <br> Would not recommend! <br> 2/5</p>
+                        </div>
+
+
+                    </details>
+
+                </article>
+            </div>
+        </div>
+
+
+
+
     </main>
 
     <footer>
@@ -117,6 +219,8 @@
             <img class="footer_logo" src="logo/Logo_white.webp" alt="Worthy Living Logo">
         </div>
     </footer>
+
+    <script src="js/productDetailsImg.js"></script>
 </body>
 
 </html>
