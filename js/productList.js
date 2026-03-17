@@ -1,6 +1,7 @@
 const urlParams = new URLSearchParams(window.location.search);
 const selectedCategory = urlParams.get("category");
-const listContainer = document.querySelector(".product-gallery");
+const header = document.querySelector(".productlist_header");
+const listContainer = document.querySelector(".productlist_1_1");
 const sortByPriceBtn = document.querySelector("#sortByPriceBtn");
 const selectedTag = urlParams.get("tag");
 
@@ -8,6 +9,13 @@ let allProducts = [];
 
 function fetchCategoryData(category) {
   const url = `https://dummyjson.com/products/category/${category}`;
+
+  if (category) {
+    const productlistHeader = category.charAt(0).toUpperCase() + category.slice(1);
+    header.textContent = productlistHeader;
+  } else {
+    header.textContent = "Alle Produkter";
+  }
 
   fetch(url)
     .then((res) => res.json())
@@ -57,16 +65,21 @@ function getProducts(products) {
 
       return `
         <article class="productlist_card">
-            <img class="${imageClass}" src="${product.images[0]}" alt="${product.title}">
-            <h3 class="productlist_title">${product.title}</h3>
-            <p class="productlist_price">${priceHTML}</p>
-            <a href="product.html?id=${product.id}" class="productlist_view">View Product</a>
+        <div class="img_container">
+          <p>${product.discountPercentage > 0 ? `<span class="badge">-${product.discountPercentage}%</span>` : ""} </p>
+          <a href="product.html?id=${product.id}" class="productlist_view"><img class="${imageClass}" src="${product.images[0]}" alt="${product.title}"></a>
+          </div> 
+          <h3 class="productlist_title">${product.title}</h3>
+          <p class="productlist_price">
+          ${priceHTML} 
+          </p>
         </article>
       `;
     })
     .join("");
 }
 
+//Sortering
 function sortByPriceAsc() {
   const sorted = [...allProducts].sort((a, b) => a.price - b.price);
   getProducts(sorted);
