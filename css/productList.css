@@ -60,7 +60,7 @@
   margin-bottom: 50px;
 }
 
-#sortByPriceBtn {
+.sortByPriceBtn {
   background: #fff;
   border: none;
   padding: 15px 5px;
@@ -137,7 +137,7 @@
     margin-bottom: 80px;
   }
 
-  #sortByPriceBtn {
+  .sortByPriceBtn {
     font-size: 1rem;
   }
 

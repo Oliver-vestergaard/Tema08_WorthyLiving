@@ -2,7 +2,7 @@ const urlParams = new URLSearchParams(window.location.search);
 const selectedCategory = urlParams.get("category");
 const header = document.querySelector(".productlist_header");
 const listContainer = document.querySelector(".productlist_1_1");
-const sortByPriceBtn = document.querySelector("#sortByPriceBtn");
+const sortByPriceBtns = document.querySelectorAll(".sortByPriceBtn");
 const selectedTag = urlParams.get("tag");
 
 let allProducts = [];
@@ -81,11 +81,13 @@ function getProducts(products) {
 }
 
 //Sortering
-function sortByPriceAsc() {
+function sortByPrice() {
   const sorted = [...allProducts].sort((a, b) => a.price - b.price);
   getProducts(sorted);
 }
 
-sortByPriceBtn.addEventListener("click", sortByPriceAsc);
+sortByPriceBtns.forEach((btn) => {
+  btn.addEventListener("click", sortByPrice);
+});
 
 fetchCategoryData(selectedCategory);
