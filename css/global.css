@@ -34,14 +34,16 @@ h1 {
 
 h2,
 h3,
-h4 {
+h4,
+summary {
   font-family: "Playfair Display", serif;
   font-weight: 400;
 }
 
 p,
 a,
-li {
+li,
+dl {
   font-family: "Roboto", sans-serif;
 
   font-style: normal;
@@ -67,7 +69,8 @@ h4 {
 
 p,
 a,
-li {
+li,
+dl {
   font-size: 1rem;
   text-wrap: balance;
 }
@@ -258,6 +261,7 @@ footer p {
 input::placeholder {
   color: var(--background-color);
   padding: 1rem;
+  opacity: 0.7;
 }
 
 input:invalid {
@@ -315,7 +319,8 @@ input:focus {
 
   p,
   a,
-  li {
+  li,
+  dl {
     font-size: 1.1rem;
   }
 
