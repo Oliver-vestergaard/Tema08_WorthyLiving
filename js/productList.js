@@ -73,6 +73,7 @@ function getProducts(products) {
           <p class="productlist_price">
           ${priceHTML} 
           </p>
+           <a href="product.html?id=${product.id}" class="buy_btn">Læg i kurv</a>
         </article>
       `;
     })

@@ -74,6 +74,13 @@
   margin-left: 5px;
 }
 
+.buy_btn {
+  text-decoration: none;
+  color: #fff;
+  background-color: black;
+  padding: 5px 10px;
+}
+
 .badge {
   position: absolute;
   top: 10px;
