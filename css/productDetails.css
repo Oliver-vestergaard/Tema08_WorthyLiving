@@ -30,6 +30,7 @@
 .price {
   text-align: center;
   font-size: 1.2rem;
+  color: var(--text-color);
 }
 
 .available {
@@ -45,8 +46,13 @@
   text-align: center;
 }
 
+.eyebrow {
+  color: var(--text-color);
+}
+
 .onsale {
-  color: #9e867e;
+  color: var(--text-color);
+  opacity: 0.85;
   text-decoration: line-through;
   font-size: 1.2rem;
 }
@@ -54,6 +60,7 @@
 .newPrice {
   text-align: center;
   font-size: 1.2rem;
+  color: var(--text-color);
 }
 
 /********** BUTTON **********/
@@ -96,6 +103,7 @@ summary {
 
 .Accordion p {
   padding-left: 2rem;
+  color: var(--text-color);
 }
 
 .Accordion dt {
@@ -104,6 +112,7 @@ summary {
 dt,
 dd {
   display: inline;
+  color: var(--text-color);
 }
 
 .Accordion_list {
@@ -118,7 +127,7 @@ summary:hover {
 
 .reviewCard {
   border: 2px solid var(--footer-color);
-
+  color: var(--text-color);
   border-radius: 10px;
   margin-bottom: 1rem;
 }
@@ -145,6 +154,7 @@ summary:hover {
 .heading-wrapper h1 {
   text-align: center;
   margin-bottom: 1rem;
+  color: var(--text-color);
 }
 
 /********** DESKTOP **********/
