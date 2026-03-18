@@ -1,8 +1,8 @@
 const params = new URLSearchParams(window.location.search);
-//const id = params.get("id");
+const id = params.get("id");
 
 //Detter er for at tjekke at jeg får oplysninger ind
-const id = 11;
+
 const productURL = "https://dummyjson.com/products/" + id;
 const productcontainer = document.querySelector("#productContainer");
 
