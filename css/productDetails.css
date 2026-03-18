@@ -22,14 +22,38 @@
   display: none;
 }
 
+.primary_img_container img {
+  background-color: white;
+}
+
 /*********** TEKST ********/
 .price {
   text-align: center;
+  font-size: 1.2rem;
 }
 
 .available {
   text-align: center;
   color: green;
+  font-weight: bold;
+}
+
+.soldout {
+  text-decoration: line-through;
+  color: red;
+  font-weight: bold;
+  text-align: center;
+}
+
+.onsale {
+  color: #9e867e;
+  text-decoration: line-through;
+  font-size: 1.2rem;
+}
+
+.newPrice {
+  text-align: center;
+  font-size: 1.2rem;
 }
 
 /********** BUTTON **********/
