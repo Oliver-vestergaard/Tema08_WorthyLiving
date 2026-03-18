@@ -48,9 +48,12 @@ function show(data) {
 
 
                 <div class="secondaryProduct_img_Container">
-                    <img id="product_img_1" class="secondaryProduct_img ${data.images[1] ? "" : "hide"}" src="${data.images[1] || ""}"  alt="billede af produkt">  
-                    <img id="product_img_2" class="secondaryProduct_img ${data.images[2] ? "" : "hide"}" src="${data.images[2] || ""}"  alt="billede af produkt">
-                    <img id="product_img_3" class="secondaryProduct_img ${data.images[0] ? "" : "hide"}" src="${data.images[0] || ""}"  alt="billede af produkt"> 
+                    <img id="product_img_1" class="secondaryProduct_img
+                     ${data.images[1] ? "" : "hide"}" src="${data.images[1] || ""}"  alt="billede af produkt">  
+                    <img id="product_img_2" class="secondaryProduct_img
+                     ${data.images[2] ? "" : "hide"}" src="${data.images[2] || ""}"  alt="billede af produkt">
+                    <img id="product_img_3" class="secondaryProduct_img
+                     ${data.images[0] ? "" : "hide"}" src="${data.images[0] || ""}"  alt="billede af produkt"> 
                 </div>
             </div>
 
@@ -140,25 +143,30 @@ function show(data) {
 }
 
 // Images er klikbare og skifter
+
 function addImageEvents() {
+  const Product_img_change1 = document.querySelector("#primary_img_change1");
+  const Product_img_change = document.querySelector("#primary_img_change");
+  const Product_img_change2 = document.querySelector("#primary_img_change2");
+
   document.querySelector("#product_img_1").addEventListener("click", () => {
-    document.querySelector("#primary_img_change1").classList.remove("hide");
-    document.querySelector("#primary_img_change").classList.add("hide");
-    document.querySelector("#primary_img_change2").classList.add("hide");
+    Product_img_change1.classList.remove("hide");
+    Product_img_change.classList.add("hide");
+    Product_img_change2.classList.add("hide");
     console.log("klik 1");
   });
 
   document.querySelector("#product_img_2").addEventListener("click", () => {
-    document.querySelector("#primary_img_change2").classList.remove("hide");
-    document.querySelector("#primary_img_change").classList.add("hide");
-    document.querySelector("#primary_img_change1").classList.add("hide");
+    Product_img_change2.classList.remove("hide");
+    Product_img_change.classList.add("hide");
+    Product_img_change1.classList.add("hide");
     console.log("klik 2");
   });
 
   document.querySelector("#product_img_3").addEventListener("click", () => {
-    document.querySelector("#primary_img_change").classList.remove("hide");
-    document.querySelector("#primary_img_change1").classList.add("hide");
-    document.querySelector("#primary_img_change2").classList.add("hide");
+    Product_img_change.classList.remove("hide");
+    Product_img_change1.classList.add("hide");
+    Product_img_change2.classList.add("hide");
     console.log("klik 3");
   });
 }
