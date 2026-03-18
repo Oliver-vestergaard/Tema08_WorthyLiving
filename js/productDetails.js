@@ -79,8 +79,7 @@ function show(data) {
 
 
 
-
-                <button class="Cta">Læg i Kurv</button>
+<a href="cart.html" class="Cta">Læg i kurv</a>
 
 
                 <article class="Accordion_container">
