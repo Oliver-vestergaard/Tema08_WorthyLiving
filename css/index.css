@@ -1,0 +1,129 @@
+/****** Billeder toppen *******/
+#forsidebilleder {
+  display: flex;
+  margin: 0px;
+  margin-top: 100px;
+  background-color: #d8cbbb;
+}
+
+#forsidebilleder img {
+  padding: 30px;
+  margin: 30px;
+  background-color: #d8cbbb;
+}
+
+@media (max-width: 840px) {
+  #forsidebilleder img {
+    width: 33.5%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+  }
+
+  #forsidebilleder {
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+/****** Tekst ******/
+
+h1,
+p {
+  color: #5b3a2e;
+}
+
+.kollektion {
+  margin: 100px;
+}
+
+.kollektion h1 {
+  text-align: center;
+  padding: 30px;
+  font-size: 5rem;
+}
+
+.kollektion p {
+  padding-left: 150px;
+  padding-right: 150px;
+  text-wrap: unset;
+}
+
+@media (max-width: 840px) {
+  .kollektion {
+    margin: 50px;
+  }
+
+  .kollektion h1 {
+    text-align: center;
+    padding: 10px;
+    font-size: 3.5rem;
+  }
+
+  .kollektion p {
+    padding-left: 25px;
+    padding-right: 25px;
+    text-wrap: unset;
+  }
+}
+
+/******** Nederste billeder samt knapper *******/
+
+.grid-1-1 img {
+  background-color: #d8cbbb;
+  margin-bottom: 90px;
+}
+
+.grid-1-1 {
+  margin: 20px;
+  padding: 50px;
+}
+
+.knap {
+  text-decoration: none;
+  color: white;
+  background-color: #6c7064;
+  border-radius: 15px;
+  border: solid white 2px;
+  font-size: 1.2rem;
+  padding: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.knap:hover {
+  color: #6c7064;
+  background-color: white;
+  border: solid #6c7064 2px;
+}
+
+.grid-1-1 > div {
+  position: relative;
+}
+
+.grid-1-1 .knap {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (min-width: 840px) {
+  .grid-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 150px;
+    padding: 50px;
+    gap: 80px;
+  }
+
+  .grid-1-1 img {
+    padding: 50px;
+    margin-bottom: 0px;
+  }
+
+  .knap {
+    font-size: 1.5rem;
+  }
+}
