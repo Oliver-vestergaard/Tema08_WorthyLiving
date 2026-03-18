@@ -67,7 +67,7 @@ function getProducts(products) {
         <article class="productlist_card">
         <div class="img_container">
           <p>${product.discountPercentage > 0 ? `<span class="badge">-${product.discountPercentage}%</span>` : ""} </p>
-          <a href="product.html?id=${product.id}" class="productlist_view"><img class="${imageClass}" src="${product.images[0]}" alt="${product.title}"></a>
+          <a href="productDetails.html?id=${product.id}" class="productlist_view"><img class="${imageClass}" src="${product.images[0]}" alt="${product.title}"></a>
           </div> 
           <h3 class="productlist_title">${product.title}</h3>
           <p class="productlist_price">
