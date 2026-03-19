@@ -52,6 +52,7 @@ img {
   font-weight: 700;
 }
 
+/********** Forms **********/
 #form-section {
   padding: 10px 20px;
   max-width: 600px;
@@ -98,6 +99,8 @@ input:invalid {
   gap: 10px;
 }
 
+/********** Betaling: **********/
+
 .betaling {
   display: flex;
   align-items: center;
@@ -124,6 +127,8 @@ input:invalid {
 .submit:hover {
   background-color: black;
 }
+
+/********** Output **********/
 
 .output {
   padding: 20px;
