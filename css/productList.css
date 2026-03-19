@@ -155,14 +155,14 @@
   }
 
   .sortBtn {
-    grid-column: 1 / -1;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-    width: 100%;
-    max-width: 1248px;
-    margin: 0 auto 50px auto;
-    padding: 0;
+    gap: 10px;
+    width: 250px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 100px;
   }
 
   .sortByPriceBtn {
