@@ -38,14 +38,20 @@
   color: var(--text-color);
 }
 
+.productList_price_container {
+  margin-top: 5px;
+  margin-left: 15px;
+}
+
 .productlist_price {
-  margin-left: 20px;
-  margin-top: 0px;
-  color: #9e867e;
+  margin-left: 5px;
+  color: var(--text-color);
+  opacity: 0.85;
 }
 
 .discounted_price {
   color: var(--text-color);
+  font-weight: 600;
 }
 
 .sortBtn {
@@ -142,6 +148,10 @@
   .productlist_view {
     margin-left: 0;
     margin-top: 10px;
+  }
+
+  .productList_price_container {
+    margin-left: 0;
   }
 
   .sortBtn {

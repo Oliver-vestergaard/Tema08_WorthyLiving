@@ -58,7 +58,7 @@ function getProducts(products) {
 
         if (discount) {
           priceHTML = `
-            <span class="old_price"><s>${price} DKK</s></span>
+            <span class="productlist_price"><s>${price} DKK</s></span>
             <span class="discounted_price">${discountedPrice.toFixed(2)} DKK</span>
           `;
         } else {
@@ -76,7 +76,7 @@ function getProducts(products) {
             </a>
           </div> 
           <h3 class="productlist_title">${product.title}</h3>
-          <p class="productlist_price">
+          <p class="productList_price_container">
             ${priceHTML} 
           </p>
           <a href="productDetails.html?id=${product.id}" class="buy_btn">Læg i kurv</a>
