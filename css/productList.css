@@ -155,9 +155,14 @@
   }
 
   .sortBtn {
-    width: 230px;
-    margin-right: 95px;
-    margin-bottom: 80px;
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1248px;
+    margin: 0 auto 50px auto;
+    padding: 0;
   }
 
   .sortByPriceBtn {
