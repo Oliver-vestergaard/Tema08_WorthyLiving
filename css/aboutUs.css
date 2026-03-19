@@ -1,0 +1,15 @@
+.omos {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.tekst {
+  max-width: 75ch; /* ca. 60 tegn pr. linje */
+  margin-left: 2rem;
+  line-height: 1.5;
+  margin-bottom: 5rem;
+}
+
+.hvem {
+  margin-left: 2rem;
+}
