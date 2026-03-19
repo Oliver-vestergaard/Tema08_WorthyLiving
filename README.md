@@ -206,7 +206,7 @@ Når et element er færdig og virker, commites det og pushes til GitHub hvorefte
 
 ## udfordringer undervejs
 
-Nogle af de udfordringer vi har haft undervejs har været at vi i dette projekt kun skulle have fat i 4 ud af de 24 kategorier. Vi har derfor, i vores menu, linket til de 4 kategorier med URL’en “productlist.html?category=groceries” hvor “groceries” ændres alt efter hvilket menu punkt der trykkes på.
+Nogle af de udfordringer vi har haft undervejs har været, at vi i dette projekt kun skulle have fat i 4 ud af de 24 kategorier. Vi har derfor, i vores menu, linket til de 4 kategorier med URL’en “productlist.html?category=groceries” hvor “groceries” ændres alt efter hvilket menu punkt der trykkes på.
 
 Det vil også sige, at skulle webshoppen opdateres til også at inkludere, eksemplevis, kategorien “beauty” skal der i menuen blot manuelt tilføjes et nyt punkt hvor den gældende URL indsættes i linket.
 I javescripten, der er tilhørende productList, er det altså muligt at hente alle kategorierne.
