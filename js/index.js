@@ -27,19 +27,19 @@ function show(data) {
     </div>
   <div class="grid-1-1"> 
   <div>
-            <a href="productlist.html?category=furniture" class="knap"> Møbler </a>
+            <a href="productList.html?category=furniture" class="knap"> Møbler </a>
              <img src="${product[12].thumbnail}" alt="billede4">
               </div>
               <div>
-            <a href="productlist.html?category=home-decoration" class="knap"> Dekorationer </a>
+            <a href="productList.html?category=home-decoration" class="knap"> Dekorationer </a>
              <img src="${product[44].thumbnail}" alt="billede5">
              </div>
               <div>
-           <a href="productlist.html?category=groceries" class="knap"> Råvarer </a>
+           <a href="productList.html?category=groceries" class="knap"> Råvarer </a>
             <img src="${product[26].thumbnail}" alt="billede6">
              </div>
             <div>
-           <a href="productlist.html?category=groceries&tag=pet%20supplies" class="knap"> Til dyr </a>
+           <a href="productList.html?category=groceries&tag=pet%20supplies" class="knap"> Til dyr </a>
             <img src="${product[21].thumbnail}" alt="billede7">
             </div>
             </div>
