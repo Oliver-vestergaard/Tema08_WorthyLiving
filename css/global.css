@@ -43,7 +43,8 @@ summary {
 p,
 a,
 li,
-dl {
+dl,
+ul {
   font-family: "Roboto", sans-serif;
 
   font-style: normal;
@@ -218,12 +219,24 @@ footer {
 }
 
 footer p {
+  color: #ffffff;
+}
+
+footer li {
+  list-style: none;
   color: var(--background-color);
 }
+
+footer ul {
+  color: white;
+  font-size: 1.1rem;
+}
+
 .grid_4-1 {
   display: grid;
   grid-template-columns: 4fr 1fr;
   margin: 1rem 0;
+  gap: 20px;
 }
 
 .SocialMediaImg {
@@ -293,8 +306,10 @@ input:focus {
   transition: 0.1s;
 }
 
+/******* FOOTER LOGO ********/
+
 .footer_logo {
-  align-self: end;
+  align-self: center;
 }
 
 /********** DESKTOP **********/
@@ -372,9 +387,14 @@ input:focus {
     margin: -1rem 0 1rem 0;
   }
 
+  footer ul {
+    font-size: 1.3rem;
+  }
+
   .formbox {
     border-radius: 20px;
     height: 2.5rem;
+    margin-top: 2rem;
   }
 
   .submit {
